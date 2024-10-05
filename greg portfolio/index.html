@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/629d6582da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/tt.png" type="image/png">
+    <script src="https://kit.fontawesome.com/629d6582da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="nav-toggle" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <h1>let's connect</h1>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home" onclick="toggleContent('home')"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" onclick="toggleContent('about')"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#portfolio" onclick="toggleContent('portfolio')"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#services" onclick="toggleContent('services')"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="#contact" onclick="toggleContent('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div id="sidemenu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#home" onclick="toggleContent('home')"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" onclick="toggleContent('about')"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#portfolio" onclick="toggleContent('portfolio')"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#services" onclick="toggleContent('services')"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="#contact" onclick="toggleContent('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+                    
+                </ul>
+            </div>
+
+        </div>
+        <div class="header-text">
+            <h1>
+                Hello, I'm <br>
+                <span>Kipngeno Gregory</span> <br>
+                Software Developer
+            </h1>
+            <a href="https://docs.google.com/document/d/1aCuI7xvZ2nkFDFqR1yIHlaUc8BOY3wJ-/edit?usp=sharing&ouid=113158751951230446171&rtpof=true&sd=true" class="btn" download="KipngenoGregory-CV.pdf" title="Download CV"><i class="fas fa-download"></i> Hire Me</a>
+
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I'm a creative problem solver with a strong foundation in programming and design...</p>
+                </div>
+                <div class="about-col-1">
+                    <img src="/images/about.jpg" alt="About Me" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-details">
+        <div class="container">
+            <div class="toggle-buttons">
+                <button class="toggle-btn" data-target="skills">Skills</button>
+                <button class="toggle-btn" data-target="experience">Experience</button>
+                <button class="toggle-btn" data-target="education">Education</button>
+            </div>
+
+            <div id="skills" class="toggle-content">
+                <h3>Skills</h3>
+                <p>Front-end development (web development) frameworks and languages: HTML, CSS, and JavaScript.</p>
+                <p>Python language: for data science, data visualization, and statistical models.</p>
+                <p>Cyber security: problem-solving, network security, penetration testing.</p>
+            </div>
+
+            <div id="experience" class="toggle-content">
+                <h3>Experience</h3>
+                <p>I have worked as a web developer for over a year, building modern, scalable, customized web applications for clients.</p>
+            </div>
+
+            <div id="education" class="toggle-content">
+                <h3>Education</h3>
+                <p>Bachelor's Software Engineering Zetech University(ongoing).</p>
+                <p>Cyber Security from CISCO Academy where I earned a certificate.</p>
+                <p>Web Development Certificate from PLP Africa.</p>
+                <p>Python certification from Power Learn Africa hackathon.</p>
+                <p>Front-end development from W3 Schools.</p>
+                <p>Essentials of web development from CODECADEMY.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Creating intuitive and visually appealing websites to ensure engaging user experiences.</p>
+                </div>
+                <div class="service">
+                    <h3>UI/UX Design</h3>
+                    <p>Crafting seamless user interfaces with a focus on user-centric design principles.</p>
+                </div>
+                <div class="service">
+                    <h3>App Design</h3>
+                    <p>Developing efficient and engaging mobile app designs tailored to user needs.</p>
+                </div>
+                <div class="service">
+                    <h3>Cyber Security</h3>
+                    <p>Ensuring the protection of systems, networks, and data through proactive threat identification, mitigation, and security best practices to safeguard against cyber attacks.</p>
+                </div>
+                <div class="service">
+                    <h3>Data Science</h3>
+                    <p>Leveraging data analytics, machine learning, and statistical models to extract insights, drive decision-making, and solve complex problems across various domains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">built-projects</h2>
+            <div class="portfolio-list">
+                <div class="work">
+                    <img src="/images/work1.png" alt="Work 1">
+                    <h3>educational Website</h3>
+                    <p>Developed the goCode website for learning and practicing coding.</p>
+                    <a href="https://fluffy-belekoy-b57dc2.netlify.app/" class="btn">goCode website</a>
+                </div>
+                <div class="work">
+                    <img src="/images/pp.png" alt="Work 2">
+                    <h3>roadside Rescue Website</h3>
+                    <p>A landing page website platform offering roadside assistance services for vehicle breakdowns.</p>
+                    <a href="https://66f7baef3c30e0815b3391fc--ornate-sherbet-93ffa9.netlify.app/" class="btn">roadside rescue website</a>
+                </div>
+                <div class="work">
+                    <img src="/images/work2.png" alt="Work 3">
+                    <h3>teleCure Hospital Website</h3>
+                    <p>hospital website that handle form validation and responsive form submission.</p>
+                    <a href="https://66efe48fbbdedf729e7ac1fc--dreamy-valkyrie-813639.netlify.app/" class="btn">teleCure website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h2>get in touch</h2>
+                <div class="footer-contact-left">
+                    <p><i class="fas fa-envelope"></i> kipngenogregory@gmail.com</p>
+                    <p><i class="fas fa-envelope"></i> gocodeservices@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +254748163492</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/KipngenoGregory"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/gregory20046"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/GregoryKipngeno"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/gregory347"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact-right">
+                    <form id="contact-form" name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    <div id="status"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Kipngeno Gregory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
